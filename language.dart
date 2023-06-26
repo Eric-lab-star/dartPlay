@@ -1,6 +1,8 @@
+// infered type
+var name = 'Bob';
 
-void main() {
-  print('Hello, World!');
-}
+//dynamic type
+Object obj = 'Bob';
 
-
+//explicit type
+String str = 'Bob';
