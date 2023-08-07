@@ -1,3 +1,6 @@
 void main(List<String> args) {
-  print(11);
+  var one = int.parse('1');
+  assert(one == 2);
+
+  print(" ");
 }
