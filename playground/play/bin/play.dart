@@ -1,5 +1,5 @@
-import 'package:play/play.dart' as play;
-
-void main(List<String> arguments) {
-  print('Hello world: ${play.calculate()}!');
+void main() {
+  const sum = [1, 2, 3];
+  sum.add(1);
+  print(sum);
 }

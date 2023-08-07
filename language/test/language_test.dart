@@ -1,4 +1,4 @@
-import 'package:test/test.dart';
+import 'package:language/language.dart';
 import 'package:test/test.dart';
 
 void main() {
