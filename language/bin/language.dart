@@ -1,6 +1,20 @@
 void main(List<String> args) {
-  var one = int.parse('1');
-  assert(one == 2);
+  var sum = swap(20, 10);
+  print(sum);
+}
 
-  print(" ");
+({int x, int y}) swap(int a, int b) {
+  return (x: a, y: b);
+}
+
+(int, bool) addInt(s1, s2) {
+  if (s1 is int) {
+    if (s2 is int) {
+      return (s1 + s2, true);
+    } else {
+      return (0, false);
+    }
+  } else {
+    return (0, false);
+  }
 }
