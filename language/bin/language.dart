@@ -1,20 +1,12 @@
 void main(List<String> args) {
-  var sum = swap(20, 10);
-  print(sum);
+  var list = <int>[];
+  var list2 = [1, 2, 3, ...list, 5];
+  print(list2);
+  var out = first(list2);
+  print(out);
 }
 
-({int x, int y}) swap(int a, int b) {
-  return (x: a, y: b);
-}
-
-(int, bool) addInt(s1, s2) {
-  if (s1 is int) {
-    if (s2 is int) {
-      return (s1 + s2, true);
-    } else {
-      return (0, false);
-    }
-  } else {
-    return (0, false);
-  }
+T first<T>(List<T> ts) {
+  T tmp = ts[0];
+  return tmp;
 }
